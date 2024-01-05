@@ -1,0 +1,12 @@
+:root {
+  --background-base: #fff;
+  --background-secondary: #E5EBDA;
+  --background-additional: #FEF8E0;
+
+  --color-base: #000;
+  --color-secondary: #46533B;
+  --color-title: #8B9A7D;
+  --color-additional: #C9A153;
+
+  --font-family-base: 'Source Serif 4', Arial, sans-serif;
+}

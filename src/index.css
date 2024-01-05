@@ -1,0 +1,6 @@
+/* сброс значений */
+@import url('./vendor/normalize.css');
+@import url('./utils/default.css');
+
+/* импорт переменных */
+@import url('./utils/vars.css');
