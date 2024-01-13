@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/at-seven-lakes/static/css/main.7a153944.css",
+    "main.js": "/at-seven-lakes/static/js/main.5bc52ca9.js",
+    "static/js/787.a8b71481.chunk.js": "/at-seven-lakes/static/js/787.a8b71481.chunk.js",
+    "static/media/logo.svg": "/at-seven-lakes/static/media/logo.46efd7f5deaa4fa7cabeffa4d2ae70fb.svg",
+    "static/media/whats-app.svg": "/at-seven-lakes/static/media/whats-app.bdb26be046240a556c94d67836016264.svg",
+    "index.html": "/at-seven-lakes/index.html",
+    "static/media/mobile.svg": "/at-seven-lakes/static/media/mobile.e6914371e4e23c3f3621c2cb3ad1a583.svg",
+    "main.7a153944.css.map": "/at-seven-lakes/static/css/main.7a153944.css.map",
+    "main.5bc52ca9.js.map": "/at-seven-lakes/static/js/main.5bc52ca9.js.map",
+    "787.a8b71481.chunk.js.map": "/at-seven-lakes/static/js/787.a8b71481.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a153944.css",
+    "static/js/main.5bc52ca9.js"
+  ]
+}
