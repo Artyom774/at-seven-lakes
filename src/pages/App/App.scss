@@ -1,0 +1,9 @@
+.page {
+  display: flex;
+  margin: 0 auto;
+  width: 1366px;
+  flex-direction: column;
+  font-family: var(--font-family-base);
+  color: var(--color-base);
+  background-color: var(--background-base);
+}
