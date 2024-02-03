@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import './App.scss';
 import MainPage from '../MainPage/MainPage';
 import MapPage from '../MapPage/MapPage';
@@ -17,6 +17,7 @@ const App: FC = () => {
         <Route path='/map' element={<MapPage />} />
         <Route path='/plan' element={<PlanPage />} />
         <Route path='/holding-events' element={<HoldingEventPage />} />
+        <Route path='*' element={<Navigate to='/' replace />}></Route>
       </Routes>
       <Footer />
     </div>

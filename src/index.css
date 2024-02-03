@@ -2,5 +2,5 @@
 @import url('./vendor/normalize.css');
 @import url('./utils/default.css');
 
-/* импорт переменных */
+@import url('./vendor/fonts.css');
 @import url('./utils/vars.css');
