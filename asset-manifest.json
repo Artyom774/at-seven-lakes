@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/at-seven-lakes/static/css/main.c8e90e01.css",
-    "main.js": "/at-seven-lakes/static/js/main.a2aa0626.js",
+    "main.css": "/at-seven-lakes/static/css/main.1da58237.css",
+    "main.js": "/at-seven-lakes/static/js/main.0f51ca55.js",
     "static/js/787.a8b71481.chunk.js": "/at-seven-lakes/static/js/787.a8b71481.chunk.js",
     "static/media/banner-background.jpg": "/at-seven-lakes/static/media/banner-background.814579e64786ec6874bc.jpg",
+    "static/media/SourceSerif4-SemiBold.ttf": "/at-seven-lakes/static/media/SourceSerif4-SemiBold.90abef7a28ce91bbb6a2.ttf",
+    "static/media/SourceSerif4-Medium.ttf": "/at-seven-lakes/static/media/SourceSerif4-Medium.9dba95c44cf545875c2b.ttf",
+    "static/media/SourceSerif4-Regular.ttf": "/at-seven-lakes/static/media/SourceSerif4-Regular.133ea737ef5818d8b08f.ttf",
     "static/media/test-image.jpg": "/at-seven-lakes/static/media/test-image.6b4f3d3e794cf2e7262d.jpg",
+    "static/media/logo_footer.svg": "/at-seven-lakes/static/media/logo_footer.dbb918dd491f4937b5bb5bc6fa385cda.svg",
     "static/media/logo.svg": "/at-seven-lakes/static/media/logo.46efd7f5deaa4fa7cabeffa4d2ae70fb.svg",
+    "static/media/whats-app_footer.svg": "/at-seven-lakes/static/media/whats-app_footer.bc1d77da45f103a156d47e9fdc581181.svg",
     "static/media/whats-app.svg": "/at-seven-lakes/static/media/whats-app.bdb26be046240a556c94d67836016264.svg",
+    "static/media/mobile_footer.svg": "/at-seven-lakes/static/media/mobile_footer.4af4a8504cadf012a8a1fadb6c173784.svg",
     "index.html": "/at-seven-lakes/index.html",
     "static/media/mobile.svg": "/at-seven-lakes/static/media/mobile.e6914371e4e23c3f3621c2cb3ad1a583.svg",
-    "main.c8e90e01.css.map": "/at-seven-lakes/static/css/main.c8e90e01.css.map",
-    "main.a2aa0626.js.map": "/at-seven-lakes/static/js/main.a2aa0626.js.map",
+    "main.1da58237.css.map": "/at-seven-lakes/static/css/main.1da58237.css.map",
+    "main.0f51ca55.js.map": "/at-seven-lakes/static/js/main.0f51ca55.js.map",
     "787.a8b71481.chunk.js.map": "/at-seven-lakes/static/js/787.a8b71481.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8e90e01.css",
-    "static/js/main.a2aa0626.js"
+    "static/css/main.1da58237.css",
+    "static/js/main.0f51ca55.js"
   ]
 }
