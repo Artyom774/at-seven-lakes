@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
-import './HousesPage.scss';
+import PageTitleSection from '../../modules/PageTitleSection/PageTitleSection';
+import pageIcon from '../../images/houses-page-icon.jpg';
 
 interface HousesPageProps {
   title: string,
@@ -8,7 +9,7 @@ interface HousesPageProps {
 const HousesPage: FC<HousesPageProps> = ({ title }) => {
   return (
     <main className='main'>
-      
+      <PageTitleSection image={pageIcon} title={title} subtitle='Выбор домика для вашего отдыха' />
     </main>
   );
 };

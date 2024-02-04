@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import PageTitleSection from '../../modules/PageTitleSection/PageTitleSection';
-import pageIcon from '../../images/map-page-icon.jpg';
 import TextSection from '../../modules/TextSection/TextSection';
+import pageIcon from '../../images/map-page-icon.jpg';
 
 interface MapPageProps {
   title: string,
