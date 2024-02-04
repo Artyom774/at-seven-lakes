@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, p, a, span {
+h1, h2, h3, h4, ul, ol, li, p, a, span {
   padding: 0;
 }
 

@@ -1,0 +1,27 @@
+.text-section {
+  display: flex;
+  width: 100%;
+  padding: 40px 125px 50px;
+  flex-direction: column;
+}
+
+.text-section__title {
+  margin: 0 auto 36px;
+  font-size: 48px;
+  line-height: 66px;
+  font-weight: 600;
+}
+
+.text-section__text-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.text-section__text {
+  min-height: 33px;
+  font-size: 26px;
+  line-height: 33px;
+  font-weight: 400;
+}
