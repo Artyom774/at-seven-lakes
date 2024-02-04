@@ -7,3 +7,9 @@
   color: var(--color-base);
   background-color: var(--background-base);
 }
+
+.main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}

@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import './Footer.scss';
+import { phone, whatsApp } from '../../utils/constants';
 import Logo from '../../images/logo_footer.svg';
 import WhatsAppIcon from '../../images/icons/whats-app_footer.svg';
 import MobileIcon from '../../images/icons/mobile_footer.svg';
@@ -13,11 +14,11 @@ const Footer: FC = () => {
       </div>
       <div className='footer__column'>
         <h3 className='footer__title'>Контакты</h3>
-        <a className='footer__contact' href='tel: +7(931)580-25-78'>
+        <a className='footer__contact' href={`tel: ${phone}`}>
           <img className='footer__contact-icon' src={MobileIcon} alt='Сотовый телефон' />
-          <span className='footer__contact-label'>+7(931)580-25-78</span>
+          <span className='footer__contact-label'>{phone}</span>
         </a>
-        <a className='footer__contact' href='https://api.whatsapp.com/send?phone=79315802578' target='_blank' rel='noopener noreferrer'>
+        <a className='footer__contact' href={whatsApp} target='_blank' rel='noopener noreferrer'>
           <img className='footer__contact-icon' src={WhatsAppIcon} alt='WhatsApp' />
           <span className='footer__contact-label'>WhatsApp</span>
         </a>

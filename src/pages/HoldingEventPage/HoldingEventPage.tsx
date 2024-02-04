@@ -1,9 +1,13 @@
-import React from 'react';
-import './HoldingEventPage.css';
+import React, { FC } from 'react';
+import './HoldingEventPage.scss';
 
-const HoldingEventPage = () => {
+interface HoldingEventPageProps {
+  title: string,
+}
+
+const HoldingEventPage: FC<HoldingEventPageProps> = ({ title }) => {
   return (
-    <main className='holding-event-page'>
+    <main className='main'>
       
     </main>
   );

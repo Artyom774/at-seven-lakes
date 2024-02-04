@@ -1,10 +1,15 @@
-import React from 'react';
-import './PlanPage.css';
+import React, { FC } from 'react';
+import PageTitleSection from '../../modules/PageTitleSection/PageTitleSection';
+import pageIcon from '../../images/plan-page-icon.jpg';
 
-const PlanPage = () => {
+interface PlanPageProps {
+  title: string,
+}
+
+const PlanPage: FC<PlanPageProps> = ({ title }) => {
   return (
-    <main className='plan-page'>
-      
+    <main className='main'>
+      <PageTitleSection image={pageIcon} title={title} subtitle='План базы' />
     </main>
   );
 };

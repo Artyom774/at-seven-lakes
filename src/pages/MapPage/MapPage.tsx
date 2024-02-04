@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './MapPage.css';
 
-const MapPage = () => {
+interface MapPageProps {
+  title: string,
+}
+
+const MapPage: FC<MapPageProps> = () => {
   return (
-    <main className='map-page'>
+    <main className='main'>
       
     </main>
   );

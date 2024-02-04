@@ -1,0 +1,26 @@
+.page-title-section {
+  display: flex;
+  width: 100%;
+  margin: 20px 0 36px;
+  flex-direction: column;
+}
+
+.page-title-section__image {
+  margin: 0 auto 4px;
+  height: 118px;
+}
+
+.page-title-section__title {
+  margin: 0 auto;
+  font-size: 48px;
+  line-height: 66px;
+  font-weight: 700;
+  color: var(--color-title);
+}
+
+.page-title-section__subtitle {
+  margin: 0 auto;
+  font-size: 36px;
+  line-height: 49px;
+  font-weight: 600;
+}
