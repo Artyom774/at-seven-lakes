@@ -1,0 +1,44 @@
+.base-plan {
+  display: flex;
+  padding: 80px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-additional);
+}
+
+.base-plan__plan {
+  position: relative;
+  width: 930px;
+  height: 540px;
+}
+
+.base-plan__bottom-layer {
+  width: 100%;
+  height: 100%;
+}
+
+.base-plan__mark {
+  position: absolute;
+}
+
+.base-plan__house-number {
+  position: absolute;
+  bottom: 0;
+  right: calc(100% + 2px);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.base-plan__mark-image {
+  object-fit: contain;
+}
+
+.base-plan__legend {
+  display: flex;
+  width: calc(100% - 960px);
+  flex-direction: column;
+  list-style-type: none;
+  row-gap: 16px;
+}
