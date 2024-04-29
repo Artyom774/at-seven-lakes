@@ -1,20 +1,20 @@
-import AdminHouse from '../images/admin-house.svg';
-import SummerHouse from '../images/summer-house.svg';
-import WinterHouse from '../images/winter-house.svg';
-import Sauna from '../images/sauna.svg';
-import WinterHouseWithSauna from '../images/winter-house-with-sauna.svg';
-import GuestHouse from '../images/guest-house.svg';
-import Shower from '../images/shower.svg';
-import OutdoorToilet from '../images/outdoor-toilet.svg';
-import Pontoon from '../images/pontoon.svg';
-import LargeBanquetHall from '../images/large-banquet-hall.svg';
+import AdminHouse from '../../images/map-marks/admin-house.svg';
+import SummerHouse from '../../images/map-marks/summer-house.svg';
+import WinterHouse from '../../images/map-marks/winter-house.svg';
+import Sauna from '../../images/map-marks/sauna.svg';
+import WinterHouseWithSauna from '../../images/map-marks/winter-house-with-sauna.svg';
+import GuestHouse from '../../images/map-marks/guest-house.svg';
+import Shower from '../../images/map-marks/shower.svg';
+import OutdoorToilet from '../../images/map-marks/outdoor-toilet.svg';
+import Pontoon from '../../images/map-marks/pontoon.svg';
+import LargeBanquetHall from '../../images/map-marks/large-banquet-hall.svg';
 
-interface legendPointsProp {
+interface legendPointsProps {
   title: string,
   image: string,
 }
 
-const legendPoints: legendPointsProp[] = [
+const legendPoints: legendPointsProps[] = [
   {
     title: 'Администрация',
     image: AdminHouse,

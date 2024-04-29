@@ -1,0 +1,30 @@
+.page-navigation {
+  width: 100%;
+  padding: 0 120px 60px;
+}
+
+.page-navigation__menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.page-navigation__item {
+  display: flex;
+  width: 270px;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.page-navigation__image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.page-navigation__caption {
+  width: 100%;
+  font-size: 33px;
+  line-height: 45px;
+  font-weight: 600;
+  text-align: center;
+}

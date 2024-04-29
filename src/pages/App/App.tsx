@@ -8,7 +8,7 @@ import HoldingEventPage from '../HoldingEventPage/HoldingEventPage';
 import MapPage from '../MapPage/MapPage';
 import Header from '../../modules/Header/Header';
 import Footer from '../../modules/Footer/Footer';
-import { main, plan, houses, holdingEvents, map } from '../../utils/nav-titles';
+import { main, plan, houses, holdingEvents, map } from '../../utils/navTitles';
 
 const App: FC = () => {
   return (
