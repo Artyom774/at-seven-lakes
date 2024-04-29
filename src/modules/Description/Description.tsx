@@ -1,14 +1,15 @@
 import React, { FC } from 'react';
 import './Description.scss';
 import DescriptionCard from '../../components/DescriptionCard/DescriptionCard';
-import descriptionBlock from '../../utils/description-block';
+import mainPageData from '../../data/descriptionBlock';
 
 const Description: FC = () => {
   return (
     <section className='description'>
-      {descriptionBlock.map((item, index) => {
+      {mainPageData.map((item, index) => {
         return (
           <DescriptionCard
+            key={index}
             title={item.title}
             subtitle={item.subtitle}
             description={item.decription}
