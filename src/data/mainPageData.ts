@@ -1,13 +1,13 @@
 import TestImage from '../images/description/test-image.jpg';
 
-interface mainPageDataProp {
+interface IMainPageData {
   title: string,
   subtitle: string,
   decription: string,
   image: string,
 }
 
-const mainPageData: mainPageDataProp[] = [
+const mainPageData: IMainPageData[] = [
   {
     title: 'Для всех желающих',
     subtitle: 'Прекрасный отдых',

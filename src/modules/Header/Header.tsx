@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.scss';
-import { main, plan, houses, holdingEvents, map } from '../../utils/nav-titles';
+import { main, plan, houses, holdingEvents, map } from '../../utils/navTitles';
 import { phone, whatsApp } from '../../utils/constants';
 import Logo from '../../images/logo.svg';
 import WhatsAppIcon from '../../images/icons/whats-app.svg';

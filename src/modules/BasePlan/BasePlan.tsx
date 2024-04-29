@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import './BasePlan.scss';
 import LegendPoint from '../../ui/LegendPoin';
-import legendPoints from './utils/legendPoints';
-import mapMarks from './utils/mapMarks';
+import legendPoints from './legendPoints';
+import mapMarks from '../../data/houses';
 import BasePlanImage from '../../images/base-plan.jpg';
 
 const BasePlan: FC = () => {
@@ -14,7 +14,7 @@ const BasePlan: FC = () => {
           return (
             <div className='base-plan__mark' key={index} style={{top: `${item.top}px`, left: `${item.left}px`}}>
               <span className='base-plan__house-number'>{item.caption}</span>
-              <img className='base-plan__mark-image' src={item.type} alt='вид домика' />
+              <img className='base-plan__mark-image' src={item.mapMark} alt='вид домика' />
             </div>
           );
         })}
