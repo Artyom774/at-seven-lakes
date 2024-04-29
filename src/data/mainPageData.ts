@@ -1,13 +1,13 @@
 import TestImage from '../images/description/test-image.jpg';
 
-interface descriptionCardProp {
+interface mainPageDataProp {
   title: string,
   subtitle: string,
   decription: string,
   image: string,
 }
 
-const mainPageData: descriptionCardProp[] = [
+const mainPageData: mainPageDataProp[] = [
   {
     title: 'Для всех желающих',
     subtitle: 'Прекрасный отдых',
