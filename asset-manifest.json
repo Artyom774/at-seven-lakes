@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/at-seven-lakes/static/css/main.ce96e40a.css",
-    "main.js": "/at-seven-lakes/static/js/main.a29e3ed3.js",
+    "main.css": "/at-seven-lakes/static/css/main.4d4c7905.css",
+    "main.js": "/at-seven-lakes/static/js/main.675a88e1.js",
     "static/js/787.a8b71481.chunk.js": "/at-seven-lakes/static/js/787.a8b71481.chunk.js",
     "static/media/banner-background.jpg": "/at-seven-lakes/static/media/banner-background.814579e64786ec6874bc.jpg",
     "static/media/SourceSerif4-SemiBold.ttf": "/at-seven-lakes/static/media/SourceSerif4-SemiBold.90abef7a28ce91bbb6a2.ttf",
@@ -32,12 +32,12 @@
     "static/media/mobile_footer.svg": "/at-seven-lakes/static/media/mobile_footer.4af4a8504cadf012a8a1fadb6c173784.svg",
     "index.html": "/at-seven-lakes/index.html",
     "static/media/mobile.svg": "/at-seven-lakes/static/media/mobile.e6914371e4e23c3f3621c2cb3ad1a583.svg",
-    "main.ce96e40a.css.map": "/at-seven-lakes/static/css/main.ce96e40a.css.map",
-    "main.a29e3ed3.js.map": "/at-seven-lakes/static/js/main.a29e3ed3.js.map",
+    "main.4d4c7905.css.map": "/at-seven-lakes/static/css/main.4d4c7905.css.map",
+    "main.675a88e1.js.map": "/at-seven-lakes/static/js/main.675a88e1.js.map",
     "787.a8b71481.chunk.js.map": "/at-seven-lakes/static/js/787.a8b71481.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce96e40a.css",
-    "static/js/main.a29e3ed3.js"
+    "static/css/main.4d4c7905.css",
+    "static/js/main.675a88e1.js"
   ]
 }
