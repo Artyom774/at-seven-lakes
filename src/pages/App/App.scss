@@ -13,3 +13,12 @@
   width: 100%;
   flex-direction: column;
 }
+
+.main__text {
+  margin: 0 auto 80px;
+  width: 82%;
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 600;
+  white-space: preserve-breaks;
+}

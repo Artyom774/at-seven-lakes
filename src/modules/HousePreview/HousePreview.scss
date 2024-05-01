@@ -1,0 +1,36 @@
+.house-peview {
+  display: flex;
+  width: 1280px;
+  margin: 0 auto 80px;
+}
+
+.house-peview__types {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 40px;
+  list-style-type: none;
+}
+
+.house-peview__type-item {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+.house-peview__type-title {
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.house-peview__house-list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 60px;
+  list-style-type: none;
+}
