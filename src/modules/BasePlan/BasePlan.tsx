@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import './BasePlan.scss';
 import LegendPoint from '../../ui/LegendPoin';
 import legendPoints from './legendPoints';
-import housesData from '../../data/houses';
+import housesData from '../../data/housesData';
 import BasePlanImage from '../../images/base-plan.jpg';
 
 const BasePlan: FC = () => {

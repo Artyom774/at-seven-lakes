@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import './HouseCard.scss';
-import { IHouses } from '../../data/houses';
+import { IHouses } from '../../data/housesData';
 import { HouseType } from '../../utils/enums';
 
 interface HouseCardProps {

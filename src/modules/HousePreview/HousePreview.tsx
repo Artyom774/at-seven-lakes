@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import './HousePreview.scss';
 import housesMenu from '../../utils/housesMenu';
-import housesData from '../../data/houses';
+import housesData from '../../data/housesData';
 import HouseCard from '../../components/HouseCard/HouseCard';
 
 const HousePreview: FC = () => {
