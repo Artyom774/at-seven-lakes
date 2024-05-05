@@ -1,0 +1,22 @@
+.info-card {
+  display: flex;
+  margin: 0 auto 40px;
+  padding: 32px 40px;
+  width: 89%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-secondary);
+  column-gap: 50px;
+}
+
+.info-card__icon {
+  width: 25px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.info-card__text {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 500;
+}
