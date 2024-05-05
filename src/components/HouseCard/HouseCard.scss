@@ -7,6 +7,36 @@
   border-radius: 30px;
 }
 
+.house-card__swiper-wrapper {
+  display: flex;
+  width: 437px;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: 15px;
+}
+
+.house-card__swiper {
+  margin: auto;
+  overflow: hidden;
+}
+
+.house-card__swiper .swiper-wrapper {
+  display: flex;
+  width: 355px;
+}
+
+.house-card__swiper-button {
+  all: initial;
+  width: 26px;
+  height: 68px;
+  background: center / cover url('../../images/icons/arrow-button.svg') no-repeat;
+  cursor: pointer;
+}
+
+.house-card__swiper-button_inverted {
+  transform: rotate(180deg);
+}
+
 .house-card__image {
   width: 355px;
   height: 324px;
