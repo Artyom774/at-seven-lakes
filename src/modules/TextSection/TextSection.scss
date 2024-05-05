@@ -12,16 +12,10 @@
   font-weight: 600;
 }
 
-.text-section__text-container {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  list-style-type: none;
-}
-
 .text-section__text {
   min-height: 33px;
   font-size: 26px;
   line-height: 33px;
   font-weight: 400;
+  white-space: preserve-breaks;
 }
