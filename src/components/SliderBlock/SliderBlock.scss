@@ -1,0 +1,41 @@
+.slider-block {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: 15px;
+}
+
+.slider-block__slider {
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider-block__slide-wrapper {
+  display: flex;
+  column-gap: 35px;
+  cursor: pointer;
+}
+
+.slider-block__slide-wrapper_width_1185 {
+  width: 1185px;
+}
+
+.slider-block__slide-wrapper_width_355 {
+  width: 355px;
+}
+
+.slider-block__slider-button {
+  all: initial;
+  width: 26px;
+  height: 68px;
+  background: center / cover url('../../images/icons/arrow-button.svg') no-repeat;
+  cursor: pointer;
+}
+
+.slider-block__slider-button_inverted {
+  transform: rotate(180deg);
+}
+
+.slider-block__image {
+  object-fit: contain;
+}
