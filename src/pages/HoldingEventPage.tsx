@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
-import PageTitleSection from '../../modules/PageTitleSection/PageTitleSection';
-import TextSection from '../../modules/TextSection/TextSection';
-import PageSlider from '../../modules/PageSlider/PageSlider';
-import InfoCard from '../../components/InfoCard/InfoCard';
-import { holdingEventPageText } from '../../data/pageTexts';
-import pageIcon from '../../images/hodling-event-page-icon.jpg';
+import PageTitleSection from '../modules/PageTitleSection/PageTitleSection';
+import TextSection from '../modules/TextSection/TextSection';
+import PageSlider from '../modules/PageSlider/PageSlider';
+import InfoCard from '../components/InfoCard/InfoCard';
+import { holdingEventPageText } from '../data/pageTexts';
+import pageIcon from '../images/hodling-event-page-icon.jpg';
 
 interface HoldingEventPageProps {
   title: string,
