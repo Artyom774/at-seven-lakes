@@ -1,0 +1,28 @@
+.contact-info {
+  display: flex;
+  margin: 0 auto 30px;
+  padding: 23px;
+  width: 89%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-secondary);
+}
+
+.contact-info__point {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+}
+
+.contact-info__icon {
+  width: 30px;
+  height: 51px;
+  object-fit: fill;
+}
+
+.contact-info__text {
+  max-width: 333px;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 500;
+}
