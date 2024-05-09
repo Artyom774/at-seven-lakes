@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import './App.scss';
-import MainPage from '../MainPage/MainPage';
-import PlanPage from '../PlanPage/PlanPage';
-import HousesPage from '../HousesPage/HousesPage';
-import HoldingEventPage from '../HoldingEventPage/HoldingEventPage';
-import MapPage from '../MapPage/MapPage';
+import MainPage from '../MainPage';
+import PlanPage from '../PlanPage';
+import HousesPage from '../HousesPage';
+import HoldingEventPage from '../HoldingEventPage';
+import MapPage from '../MapPage';
 import Header from '../../modules/Header/Header';
 import Footer from '../../modules/Footer/Footer';
 import { main, plan, houses, holdingEvents, map } from '../../utils/navTitles';

@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import PageTitleSection from '../../modules/PageTitleSection/PageTitleSection';
-import PageNavigation from '../../modules/PageNavigation/PageNavigation';
-import HousePreview from '../../modules/HousePreview/HousePreview';
-import pageIcon from '../../images/houses-page-icon.jpg';
+import PageTitleSection from '../modules/PageTitleSection/PageTitleSection';
+import PageNavigation from '../modules/PageNavigation/PageNavigation';
+import HousePreview from '../modules/HousePreview/HousePreview';
+import pageIcon from '../images/houses-page-icon.jpg';
 
 interface HousesPageProps {
   title: string,
