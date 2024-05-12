@@ -7,3 +7,9 @@ export enum HouseType {
   WINTER_HOUSE_WITH_SAUNA = 'winterHouseWithSauna',
   GUEST_HOUSE = 'guestHouse',
 }
+
+export enum CostNameType {
+  PER_DAY = 'руб./сутки',
+  PER_DAY_HALF = 'руб./полсуток',
+  PER_BED = 'руб./койко-место',
+}

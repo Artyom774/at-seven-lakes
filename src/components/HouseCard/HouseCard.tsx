@@ -21,7 +21,7 @@ const HouseCard: FC<HouseCardProps> = ({house}) => {
         <p>Вместимость: {house.capacity} гостей{house.winterCapacity && `, зимой ${house.winterCapacity} гостей`}</p>
         <p>{house.description}</p>
         <br/>
-        <p><span className='house-card__bold-text'>Стоимость:</span> {house.cost} руб./сутки</p>
+        <p><span className='house-card__bold-text'>Стоимость:</span> {house.cost} {house.costName}</p>
         <p className='house-card__bold-text'>{house.additionally}</p>
       </div>
     </li>

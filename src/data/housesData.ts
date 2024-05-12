@@ -1,4 +1,4 @@
-import { HouseType } from '../utils/enums';
+import { CostNameType, HouseType } from '../utils/enums';
 import TestImage from '../images/description/test-image.jpg';
 import SummerHouse from '../images/map-marks/summer-house.svg';
 import WinterHouse from '../images/map-marks/winter-house.svg';
@@ -19,19 +19,12 @@ export interface IHouses {
   winterCapacity?: number,
   description: string,
   cost: number,
+  costName: CostNameType,
   additionally?: string,
 }
 
-const testDescription: string = `Варенду коттеджа включено:
-  · 1 спальня с 3 одноместными кроватями на втором этаже
-  · Печь
-  · Ванная с туалетом
-  · Встроенная кухня с плитой и раковиной
-  · Посуда
-  · Чайник, микроволновка, холодильник
-  · ЖК панель
-  · Ортопедический матрас, постельное белье, одеяло, плед
-  · Мангальная зона, дрова`;
+const summerHouseAnnotation: string = 'Летний (щитовой) домик';
+const summerHouseDescription: string = 'Двухкомнатный с верандой, с мангальной зоной и зоной отдыха';
 
 const housesData: IHouses[] = [
   {
@@ -41,12 +34,11 @@ const housesData: IHouses[] = [
     left: 135,
     top: 222,
     images: [TestImage, TestImage, TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    winterCapacity: 4,
-    description: testDescription,
-    cost: 2000,
-    additionally: 'Рядом с домом банька 21А, за доп. плату 2.000 руб./сутки',
+    annotation: summerHouseAnnotation,
+    capacity: 4,
+    description: summerHouseDescription,
+    cost: 800,
+    costName: CostNameType.PER_BED,
   },
   {
     title: '6',
@@ -55,10 +47,11 @@ const housesData: IHouses[] = [
     left: 276,
     top: 227,
     images: [TestImage, TestImage, TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: summerHouseAnnotation,
+    capacity: 4,
+    description: summerHouseDescription,
+    cost: 800,
+    costName: CostNameType.PER_BED,
   },
   {
     title: '7',
@@ -67,10 +60,22 @@ const housesData: IHouses[] = [
     left: 336,
     top: 229,
     images: [TestImage, TestImage, TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: 'Зимний/Летний дом',
+    capacity: 7,
+    description: `В аренду коттеджа включено:
+    •	3 спальни по 2 одноместных кроватей
+    •	1 полутороспальная тахта
+    •	Электро-сауна
+    •	Банные простыни
+    •	Туалет комната, душевая
+    •	Встроенная кухня с плитой и раковиной
+    •	Посуда
+    •	 Чайник, Микроволновка, холодильник
+    •	ЖК панель
+    •	Ортопедический матрас, постельное белье, одеяло, плед
+    •	Мангальная зона, зона отдыха, дрова`,
+    cost: 7500,
+    costName: CostNameType.PER_DAY,
   },
   {
     title: '9',
@@ -79,10 +84,11 @@ const housesData: IHouses[] = [
     left: 213,
     top: 186,
     images: [TestImage, TestImage, TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: summerHouseAnnotation,
+    capacity: 4,
+    description: summerHouseDescription,
+    cost: 800,
+    costName: CostNameType.PER_BED,
   },
   {
     title: '10',
@@ -91,10 +97,11 @@ const housesData: IHouses[] = [
     left: 276,
     top: 186,
     images: [TestImage, TestImage, TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: summerHouseAnnotation,
+    capacity: 4,
+    description: summerHouseDescription,
+    cost: 800,
+    costName: CostNameType.PER_BED,
   },
   {
     title: '11',
@@ -103,10 +110,11 @@ const housesData: IHouses[] = [
     left: 336,
     top: 186,
     images: [TestImage, TestImage, TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: summerHouseAnnotation,
+    capacity: 4,
+    description: summerHouseDescription,
+    cost: 800,
+    costName: CostNameType.PER_BED,
   },
   {
     title: '13a',
@@ -115,10 +123,21 @@ const housesData: IHouses[] = [
     left: 755,
     top: 116,
     images: [TestImage, TestImage, TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: 'Зимний/Летний дом',
+    capacity: 3,
+    description: `Двухэтажный шестиугольный дом из деревянного бруса с застекленной верандой. На веранде диван скамейка и стол
+    В аренду коттеджа включено:
+    •	1 спальня с 3 одноместными кроватями на втором этаже
+    •	печь
+    •	Ванная с туалетом
+    •	Встроенная кухня с плитой и раковиной
+    •	Посуда
+    •	Чайник, микроволновка, холодильник
+    •	ЖК панель
+    •	Ортопедический матрас, постельное белье, одеяло, плед
+    •	мангальная зона, дрова`,
+    cost: 3500,
+    costName: CostNameType.PER_DAY,
   },
   {
     title: '13б',
@@ -127,10 +146,21 @@ const housesData: IHouses[] = [
     left: 815,
     top: 116,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: 'Зимний/Летний дом',
+    capacity: 3,
+    description: `Двухэтажный шестиугольный дом из деревянного бруса с застекленной верандой. На веранде диван скамейка и стол
+    В аренду коттеджа включено:
+    •	1 спальня с 3 одноместными кроватями на втором этаже
+    •	печь
+    •	Ванная с туалетом
+    •	Встроенная кухня с плитой и раковиной
+    •	Посуда
+    •	Чайник, микроволновка, холодильник
+    •	ЖК панель
+    •	Ортопедический матрас, постельное белье, одеяло, плед
+    •	мангальная зона, дрова`,
+    cost: 3500,
+    costName: CostNameType.PER_DAY,
   },
   {
     title: '14',
@@ -139,10 +169,11 @@ const housesData: IHouses[] = [
     left: 764,
     top: 277,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: summerHouseAnnotation,
+    capacity: 4,
+    description: summerHouseDescription,
+    cost: 800,
+    costName: CostNameType.PER_BED,
   },
   {
     title: '15',
@@ -151,10 +182,11 @@ const housesData: IHouses[] = [
     left: 820,
     top: 234,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: summerHouseAnnotation,
+    capacity: 4,
+    description: summerHouseDescription,
+    cost: 800,
+    costName: CostNameType.PER_BED,
   },
   {
     title: '16',
@@ -163,10 +195,11 @@ const housesData: IHouses[] = [
     left: 818,
     top: 281,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: summerHouseAnnotation,
+    capacity: 4,
+    description: summerHouseDescription,
+    cost: 800,
+    costName: CostNameType.PER_BED,
   },
   {
     title: '17',
@@ -175,10 +208,11 @@ const housesData: IHouses[] = [
     left: 845,
     top: 326,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: summerHouseAnnotation,
+    capacity: 4,
+    description: summerHouseDescription,
+    cost: 800,
+    costName: CostNameType.PER_BED,
   },
   {
     title: '18',
@@ -187,10 +221,11 @@ const housesData: IHouses[] = [
     left: 776,
     top: 334,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: summerHouseAnnotation,
+    capacity: 4,
+    description: summerHouseDescription,
+    cost: 800,
+    costName: CostNameType.PER_BED,
   },
   {
     title: '20',
@@ -199,10 +234,24 @@ const housesData: IHouses[] = [
     left: 558,
     top: 315,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: 'Зимний/Летний 2-этажный дом из сруба с печным отоплением',
+    capacity: 11,
+    description: `В аренду коттеджа включено:
+    •	1 спальня с 3 одноместными кроватями и диваном – 1 этаж
+    •	1 спальня с 3 одноместными кроватями и балконом – 2 этаж
+    •	2 спальни по 2 кровати – 2 этаж
+    •	Ванная комната
+    •	туалет
+    •	встроенная кухня плитой и раковиной
+    •	печь
+    •	Каминный зал
+    •	Чайник, Микроволновка, холодильник
+    •	Посуда
+    •	ЖК панель
+    •	Матрас, постельное белье, одеяло, плед
+    •	мангальная зона, зона отдыха, дрова`,
+    cost: 10000,
+    costName: CostNameType.PER_DAY,
   },
   {
     title: '21',
@@ -212,9 +261,11 @@ const housesData: IHouses[] = [
     top: 315,
     images: [TestImage],
     annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    capacity: 17,
+    description: 'Зимний/Летний 2-этажный дом из сруба с печным отоплением',
+    cost: 15000,
+    costName: CostNameType.PER_DAY,
+    additionally: 'Рядом с домом банька 21А, за доп. плату 2.000 руб/полсуток',
   },
   {
     title: '21а',
@@ -223,9 +274,13 @@ const housesData: IHouses[] = [
     left: 710,
     top: 316,
     images: [TestImage],
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    capacity: 4,
+    description: `Одноэтажная на 4 гостей
+    В аренду включено:
+    •	Парилка
+    •	душевая`,
+    cost: 3000,
+    costName: CostNameType.PER_DAY_HALF,
   },
   {
     title: '22',
@@ -234,10 +289,23 @@ const housesData: IHouses[] = [
     left: 646,
     top: 374,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: 'Зимний/Летний 2-этажный дом с каминным отоплением',
+    capacity: 9,
+    winterCapacity: 6,
+    description: `В аренду коттеджа включено:
+    •	2 спальни по 3 одноместных кровати – 2 этаж
+    •	1 спальня с 3 одноместными кроватями – пристрой неотапливаемый
+    •	Ванная комната с туалетом
+    •	Встроенная кухня с плитой и раковиной
+    •	Каминный зал на 9 посадочных мест
+    •	Чайник, микроволновка, холодильник
+    •	Посуда
+    •	ЖК панель
+    •	Ортопедический матрас, постельное белье, одеяло, плед
+    •	Крытый дворик с зоной отдыха
+    •	Мангальная зона, дрова`,
+    cost: 9000,
+    costName: CostNameType.PER_DAY,
   },
   {
     title: '22а',
@@ -246,9 +314,15 @@ const housesData: IHouses[] = [
     left: 615,
     top: 356,
     images: [TestImage],
-    capacity: 6,
-    description: testDescription,
+    capacity: 7,
+    description: `Одноэтажная на 7 гостей
+    В аренду включено:
+    •	Комната отдыха с французским окном
+    •	Стол, стулья
+    •	Парилка
+    •	душевая`,
     cost: 2000,
+    costName: CostNameType.PER_DAY_HALF,
   },
   {
     title: '23',
@@ -257,10 +331,22 @@ const housesData: IHouses[] = [
     left: 487,
     top: 96,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
+    annotation: 'Зимний/Летний 2-этажный сруб с баней, с верандой, мангальной зоной',
     capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    description: `В аренду включено:
+    •	комната с 4 одноместными кроватями и 2 дивана
+    •	встроенная кухня с плитой и раковиной
+    •	Чайник, Микроволновка, холодильник
+    •	Посуда
+    •	ЖК панель
+    •	бильярд
+    •	ортопедический матрас, постельное белье, одеяло, плед
+    Баня:
+    •	Душевая кабина
+    •	туалет
+    •	парилка`,
+    cost: 7000,
+    costName: CostNameType.PER_DAY,
   },
   {
     title: '24',
@@ -269,10 +355,19 @@ const housesData: IHouses[] = [
     left: 395,
     top: 132,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: 'Летний дом с каменными печами',
+    capacity: 11,
+    description: `В аренду включено:
+    •	2 спальни с 3 одноместными кроватями
+    •	1 спальня с 2 одноместными кроватями
+    •	В гостиной 2 дивана и одноместная кровать
+    •	Мини-кухня с плиткой и раковиной
+    •	Чайник, Микроволновка, холодильник
+    •	Свежее постельное белье и полотенце
+    •	Туалет на улице
+    •	Мангальная зона, зона отдыха`,
+    cost: 8000,
+    costName: CostNameType.PER_DAY,
   },
   {
     title: '25',
@@ -281,10 +376,29 @@ const housesData: IHouses[] = [
     left: 473,
     top: 144,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: 'Летний трёхэтажный (банкетный) дом с отоплением, с мангальной зоной',
+    capacity: 30,
+    description: `1 этаж – банкетный зал на 50 мест со встроенной кухней
+    2-3 этажи (отдельный вход с улицы) – спальные места на 30 гостей
+    В аренду включено:
+    1 этаж
+    •	Каминный зал (до 50 посадочных мест)
+    •	Большая кухня с островком  (2 плиты, 2 мойки)
+    •	2 чайника, 2 микроволновки, холодильник, посудомоечная машина
+    •	посуда
+    •	2 туалета с умывальником
+    2 этаж
+    •	4 комнаты по 2 места
+    •	1 комната – 3 места
+    •	1 комната – 4 места
+    •	Душевая, туалет
+    3 этаж
+    •	1 комната – 4 места
+    •	1 комната – 5 места
+    •	1 комната – 6 места
+    •	Туалетная комната`,
+    cost: 30000,
+    costName: CostNameType.PER_DAY,
   },
   {
     title: '26',
@@ -293,10 +407,21 @@ const housesData: IHouses[] = [
     left: 600,
     top: 96,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: 'Зимний/Летний 2-этажный сруб с баней, с верандой, мангальной зоной. Свой выход к озеру с понтоном',
+    capacity: 8,
+    description: `В аренду включено:
+    •	комната с 3 одноместными кроватями – 1 этаж
+    •	комната с 5 одноместными кроватями – 2 этаж, вход с улицы
+    •	зала со встроенной кухней с плитой и раковиной
+    •	Чайник, Микроволновка, холодильник
+    •	Посуда
+    •	Свежее постельное белье и полотенце
+    Баня:
+    •	Туалет
+    •	Моечная
+    •	Парилка`,
+    cost: 7000,
+    costName: CostNameType.PER_DAY,
   },
   {
     title: '27',
@@ -305,10 +430,23 @@ const housesData: IHouses[] = [
     left: 150,
     top: 286,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: 'Зимний/Летний дом из сруба с баней, с верандой, мангальной зоной',
+    capacity: 14,
+    description: `В аренду включено:
+    •	2 комнаты по 3 одноместных кровати
+    •	1 комната с 4 одноместными кроватями
+    •	Встроенная кухня с плитой и раковиной
+    •	Диванная зона (3 дивана)
+    •	столовая
+    •	Каменная печь с плитой, печь
+    •	Чайник, Микроволновка, холодильник
+    •	Свежее постельное белье и полотенце
+    •	Туалет на улице
+    Баня:
+    •	парилка
+    •	моечная`,
+    cost: 9000,
+    costName: CostNameType.PER_DAY,
   },
   {
     title: '28',
@@ -317,22 +455,32 @@ const housesData: IHouses[] = [
     left: 133,
     top: 167,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: 'Зимний/Летний  двухэтажный дом',
+    capacity: 4,
+    description: `В аренду включено:
+    •	комната с 4 одноместными кроватями – 2 этаж
+    •	встроенная кухня с плитой и раковиной
+    •	печь
+    •	Чайник, микроволновка, холодильник
+    •	Ортопедический матрас, постельное белье, одеяло, плед
+    •	Моечное отделение: душ, унитаз
+    •	парилка
+    •	Мангальная зона, зона отдыха`,
+    cost: 7000,
+    costName: CostNameType.PER_DAY,
   },
   {
     title: '30',
-    type: HouseType.SAUNA,
+    type: HouseType.SUMMER_HOUSE,
     mapMark: Sauna,
     left: 336,
     top: 147,
     images: [TestImage],
-    annotation: 'Летний дом с каменными ппечами',
-    capacity: 6,
-    description: testDescription,
-    cost: 2000,
+    annotation: summerHouseAnnotation,
+    capacity: 4,
+    description: summerHouseDescription,
+    cost: 800,
+    costName: CostNameType.PER_BED,
   },
 ];
 

@@ -12,12 +12,12 @@
 
 .slider-block__slide-wrapper {
   display: flex;
-  column-gap: 35px;
   cursor: pointer;
 }
 
 .slider-block__slide-wrapper_width_1185 {
   width: 1185px;
+  column-gap: 35px;
 }
 
 .slider-block__slide-wrapper_width_355 {
