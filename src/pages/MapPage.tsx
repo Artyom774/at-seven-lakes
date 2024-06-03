@@ -13,7 +13,7 @@ interface MapPageProps {
 const MapPage: FC<MapPageProps> = ({ title }) => {
   return (
     <main className='main'>
-      <PageTitleSection image={pageIcon} title={title} subtitle='Большие уютные дома для ваших праздничных мероприятий' />
+      <PageTitleSection image={pageIcon} title={title} subtitle='Карта' />
       <MapSection />
       <ContactInfo />
       <TextSection title='Как до нас добраться?' text={mapPageText} />
