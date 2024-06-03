@@ -7,6 +7,25 @@ import Sauna from '../images/map-marks/sauna.svg';
 import WinterHouseWithSauna from '../images/map-marks/winter-house-with-sauna.svg';
 import GuestHouse from '../images/map-marks/guest-house.svg';
 
+import images07 from './houses/07';
+import images13a from './houses/13a';
+import images13b from './houses/13b';
+import images14 from './houses/14';
+import images16 from './houses/16';
+import images18 from './houses/18';
+import images20 from './houses/20';
+import images21 from './houses/21';
+import images21a from './houses/21a';
+import images22 from './houses/22';
+import images22a from './houses/22a';
+import images23 from './houses/23';
+import images24 from './houses/24';
+import images25 from './houses/25';
+import images26 from './houses/26';
+import images27 from './houses/27';
+import images28 from './houses/28';
+import images30 from './houses/30';
+
 export interface IHouses {
   title: string,
   type: HouseType,
@@ -59,7 +78,7 @@ const housesData: IHouses[] = [
     mapMark: WinterHouse,
     left: 336,
     top: 229,
-    images: [TestImage, TestImage, TestImage],
+    images: images07,
     annotation: 'Зимний/Летний дом',
     capacity: 7,
     description: `В аренду коттеджа включено:
@@ -122,7 +141,7 @@ const housesData: IHouses[] = [
     mapMark: SmallWinterHouse,
     left: 755,
     top: 116,
-    images: [TestImage, TestImage, TestImage],
+    images: images13a,
     annotation: 'Зимний/Летний дом',
     capacity: 3,
     description: `Двухэтажный шестиугольный дом из деревянного бруса с застекленной верандой. На веранде диван скамейка и стол
@@ -145,7 +164,7 @@ const housesData: IHouses[] = [
     mapMark: SmallWinterHouse,
     left: 815,
     top: 116,
-    images: [TestImage],
+    images: images13b,
     annotation: 'Зимний/Летний дом',
     capacity: 3,
     description: `Двухэтажный шестиугольный дом из деревянного бруса с застекленной верандой. На веранде диван скамейка и стол
@@ -168,7 +187,7 @@ const housesData: IHouses[] = [
     mapMark: SummerHouse,
     left: 764,
     top: 277,
-    images: [TestImage],
+    images: images14,
     annotation: summerHouseAnnotation,
     capacity: 4,
     description: summerHouseDescription,
@@ -194,7 +213,7 @@ const housesData: IHouses[] = [
     mapMark: SummerHouse,
     left: 818,
     top: 281,
-    images: [TestImage],
+    images: images16,
     annotation: summerHouseAnnotation,
     capacity: 4,
     description: summerHouseDescription,
@@ -220,7 +239,7 @@ const housesData: IHouses[] = [
     mapMark: SummerHouse,
     left: 776,
     top: 334,
-    images: [TestImage],
+    images: images18,
     annotation: summerHouseAnnotation,
     capacity: 4,
     description: summerHouseDescription,
@@ -233,7 +252,7 @@ const housesData: IHouses[] = [
     mapMark: WinterHouse,
     left: 558,
     top: 315,
-    images: [TestImage],
+    images: images20,
     annotation: 'Зимний/Летний 2-этажный дом из сруба с печным отоплением',
     capacity: 11,
     description: `В аренду коттеджа включено:
@@ -259,7 +278,7 @@ const housesData: IHouses[] = [
     mapMark: WinterHouse,
     left: 629,
     top: 315,
-    images: [TestImage],
+    images: images21,
     annotation: 'Летний дом с каменными ппечами',
     capacity: 17,
     description: 'Зимний/Летний 2-этажный дом из сруба с печным отоплением',
@@ -273,7 +292,7 @@ const housesData: IHouses[] = [
     mapMark: Sauna,
     left: 710,
     top: 316,
-    images: [TestImage],
+    images: images21a,
     capacity: 4,
     description: `Одноэтажная на 4 гостей
     В аренду включено:
@@ -288,7 +307,7 @@ const housesData: IHouses[] = [
     mapMark: WinterHouse,
     left: 646,
     top: 374,
-    images: [TestImage],
+    images: images22,
     annotation: 'Зимний/Летний 2-этажный дом с каминным отоплением',
     capacity: 9,
     winterCapacity: 6,
@@ -313,7 +332,7 @@ const housesData: IHouses[] = [
     mapMark: Sauna,
     left: 615,
     top: 356,
-    images: [TestImage],
+    images: images22a,
     capacity: 7,
     description: `Одноэтажная на 7 гостей
     В аренду включено:
@@ -330,7 +349,7 @@ const housesData: IHouses[] = [
     mapMark: WinterHouseWithSauna,
     left: 487,
     top: 96,
-    images: [TestImage],
+    images: images23,
     annotation: 'Зимний/Летний 2-этажный сруб с баней, с верандой, мангальной зоной',
     capacity: 6,
     description: `В аренду включено:
@@ -354,7 +373,7 @@ const housesData: IHouses[] = [
     mapMark: WinterHouseWithSauna,
     left: 395,
     top: 132,
-    images: [TestImage],
+    images: images24,
     annotation: 'Летний дом с каменными печами',
     capacity: 11,
     description: `В аренду включено:
@@ -375,7 +394,7 @@ const housesData: IHouses[] = [
     mapMark: GuestHouse,
     left: 473,
     top: 144,
-    images: [TestImage],
+    images: images25,
     annotation: 'Летний трёхэтажный (банкетный) дом с отоплением, с мангальной зоной',
     capacity: 30,
     description: `1 этаж – банкетный зал на 50 мест со встроенной кухней
@@ -406,7 +425,7 @@ const housesData: IHouses[] = [
     mapMark: WinterHouseWithSauna,
     left: 600,
     top: 96,
-    images: [TestImage],
+    images: images26,
     annotation: 'Зимний/Летний 2-этажный сруб с баней, с верандой, мангальной зоной. Свой выход к озеру с понтоном',
     capacity: 8,
     description: `В аренду включено:
@@ -429,7 +448,7 @@ const housesData: IHouses[] = [
     mapMark: WinterHouseWithSauna,
     left: 150,
     top: 286,
-    images: [TestImage],
+    images: images27,
     annotation: 'Зимний/Летний дом из сруба с баней, с верандой, мангальной зоной',
     capacity: 14,
     description: `В аренду включено:
@@ -454,7 +473,7 @@ const housesData: IHouses[] = [
     mapMark: WinterHouseWithSauna,
     left: 133,
     top: 167,
-    images: [TestImage],
+    images: images28,
     annotation: 'Зимний/Летний  двухэтажный дом',
     capacity: 4,
     description: `В аренду включено:
@@ -475,7 +494,7 @@ const housesData: IHouses[] = [
     mapMark: Sauna,
     left: 336,
     top: 147,
-    images: [TestImage],
+    images: images30,
     annotation: summerHouseAnnotation,
     capacity: 4,
     description: summerHouseDescription,
