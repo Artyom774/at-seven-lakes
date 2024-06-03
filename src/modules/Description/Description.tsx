@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import './Description.scss';
 import DescriptionCard from '../../components/DescriptionCard/DescriptionCard';
-import mainPageData from '../../data/mainPageData';
+import mainPageData from '../../data/mainPageData/mainPageData';
 
 const Description: FC = () => {
   return (
