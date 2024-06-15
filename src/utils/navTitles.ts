@@ -18,11 +18,6 @@ export const houses: INavTitle = {
   title: 'Домики',
 };
 
-export const holdingEvents: INavTitle = {
-  path: '/holding-events',
-  title: 'Проведение праздников',
-};
-
 export const map: INavTitle = {
   path: '/map',
   title: 'Расположение базы',

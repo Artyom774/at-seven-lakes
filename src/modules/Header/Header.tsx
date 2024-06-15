@@ -16,7 +16,6 @@ const Header: FC = () => {
           <NavLink className='header__link' to={main.path}>{main.title}</NavLink>
           <NavLink className='header__link' to={plan.path}>{plan.title}</NavLink>
           <NavLink className='header__link' to={houses.path}>{houses.title}</NavLink>
-          {/* <NavLink className='header__link' to={holdingEvents.path}>{holdingEvents.title}</NavLink> */}
           <NavLink className='header__link' to={map.path}>{map.title}</NavLink>
         </nav>
         <div className='header__contacts'>
