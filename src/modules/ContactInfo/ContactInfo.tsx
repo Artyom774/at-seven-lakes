@@ -9,7 +9,7 @@ const ContactInfo: FC = () => {
     <section className='contact-info'>
       <div className='contact-info__point'>
         <img className='contact-info__icon' src={LocationIcon} alt='Местоположение' />
-        <span className='contact-info__text'>Челябинская бласть, Каслинский район, У семи озёр</span>
+        <span className='contact-info__text'>Челябинская бласть, Каслинский район,<br/>У семи озёр</span>
       </div>
       <div className='contact-info__point'>
         <span className='contact-info__text'>{phone}</span>

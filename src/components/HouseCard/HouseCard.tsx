@@ -11,14 +11,17 @@ interface HouseCardProps {
 const HouseCard: FC<HouseCardProps> = ({house}) => {
   return (
     <li className='house-card'>
-      <SliderBlock images={house.images} alt={house.title} slidesPerView={1} slideWidth={355} slideHeight={324} />
+      <SliderBlock images={house.images} alt={house.title} slidesPerView={1} slideWidth={355} slideHeight={266} />
       <div className='house-card__info'>
         <h4 className='house-card__bold-text'>
-          {house.type === HouseType.SAUNA ? 'Сауна' : 'Дом №'} {house.title}
+          {house.type !== HouseType.SUMMER_HOUSE
+            ? `${house.type === HouseType.SAUNA ? 'Сауна' : 'Дом №'} ${house.title}`
+            : house.annotation}
         </h4>
-        <p className='house-card__bold-text'>{house.annotation}</p>
+        {house.type !== HouseType.SUMMER_HOUSE && <p className='house-card__bold-text'>{house.annotation}</p>}
         <br/>
         <p>Вместимость: {house.capacity} гостей{house.winterCapacity && `, зимой ${house.winterCapacity} гостей`}</p>
+        <br/>
         <p>{house.description}</p>
         <br/>
         <p><span className='house-card__bold-text'>Стоимость:</span> {house.cost} {house.costName}</p>
