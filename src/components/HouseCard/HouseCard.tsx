@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import './HouseCard.scss';
 import SliderBlock from '../SliderBlock/SliderBlock';
-import { IHouses } from '../../data/housesData';
+import { IHouse } from '../../data/housesData';
 import { HouseType } from '../../utils/enums';
 
 interface HouseCardProps {
-  house: IHouses,
+  house: IHouse,
 }
 
 const HouseCard: FC<HouseCardProps> = ({house}) => {
