@@ -1,6 +1,5 @@
 /* eslint-disable max-len */
 import { CostNameType, HouseType } from '../utils/enums';
-import SummerHouse from '../images/map-marks/summer-house.svg';
 import WinterHouse from '../images/map-marks/winter-house.svg';
 import SmallWinterHouse from '../images/map-marks/small-winter-house.svg';
 import Sauna from '../images/map-marks/sauna.svg';
@@ -26,13 +25,13 @@ import images27 from './houses/27';
 import images28 from './houses/28';
 import images30 from './houses/30';
 
-export interface IHouses {
+export interface IHouse {
   title: string,
   type: HouseType,
   additionalType?: HouseType,
-  mapMark: string,
-  left: number,
-  top: number,
+  mapMark: string | null,
+  left?: number,
+  top?: number,
   images: string[],
   annotation?: string,
   capacity: number,
@@ -46,13 +45,11 @@ export interface IHouses {
 const summerHouseAnnotation: string = 'Летний (щитовой) домик';
 const summerHouseDescription: string = 'Двухкомнатный с верандой, с мангальной зоной и зоной отдыха';
 
-const housesData: IHouses[] = [
+const housesData: IHouse[] = [
   {
     title: summerHouseAnnotation,
     type: HouseType.SUMMER_HOUSE,
-    mapMark: SummerHouse,
-    left: 764,
-    top: 277,
+    mapMark: null,
     images: [...images14, ...images16, ...images18],
     annotation: summerHouseAnnotation,
     capacity: 4,

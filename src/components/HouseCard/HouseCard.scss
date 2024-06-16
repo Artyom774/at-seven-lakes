@@ -1,8 +1,10 @@
 .house-card {
   display: flex;
   width: 100%;
+  max-height: inherit;
   padding: 50px 50px 80px;
   column-gap: 60px;
+  background-color: var(--background-base);
   border: 5px solid var(--color-title);
   border-radius: 30px;
 }
