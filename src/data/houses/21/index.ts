@@ -11,6 +11,7 @@ import photo10 from './21_10.jpg';
 import photo11 from './21_11.jpg';
 import photo12 from './21_12.jpg';
 import photo13 from './21_13.jpg';
+import photo14 from './21_14.jpg';
 
 const images21: string[] = [
   photo1,
@@ -26,6 +27,7 @@ const images21: string[] = [
   photo11,
   photo12,
   photo13,
+  photo14,
 ];
 
 export default images21;
