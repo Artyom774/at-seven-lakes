@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import './PageNavigation.scss';
-import housesMenu from '../../utils/housesMenu';
+import housesPageMenu from '../../data/housesPageMenu';
 
 const PageNavigation: FC = () => {
   const scrollToItem = (id: string): void => {
@@ -11,7 +11,7 @@ const PageNavigation: FC = () => {
   return (
     <section className='page-navigation'>
       <menu className='page-navigation__menu'>
-        {housesMenu.map((item, index) => {
+        {housesPageMenu.map((item, index) => {
           return (
             <div className='page-navigation__item' key={index} onClick={() => scrollToItem(item.type)}>
               <img className='page-navigation__image' src={item.image} alt={item.caption} />

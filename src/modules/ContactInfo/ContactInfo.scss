@@ -18,6 +18,7 @@
   width: 30px;
   height: 51px;
   object-fit: fill;
+  transition-duration: .2s;
 }
 
 .contact-info__text {
@@ -26,4 +27,13 @@
   line-height: 38px;
   font-weight: 500;
   white-space: preserve-breaks;
+}
+
+.contact-info__point:hover .contact-info__icon {
+  transform: scale(1.1);
+}
+
+.contact-info__point:hover .contact-info__text {
+  text-decoration: underline;
+  font-weight: 600;
 }
