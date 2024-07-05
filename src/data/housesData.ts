@@ -336,7 +336,7 @@ const housesData: IHouse[] = [
     •	Туалет
     •	Моечная
     •	Парилка`,
-    cost: 7000,
+    cost: 8000,
     costName: CostNameType.PER_DAY,
   },
   {

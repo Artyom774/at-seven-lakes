@@ -14,7 +14,12 @@
   width: 270px;
   flex-direction: column;
   row-gap: 20px;
+  transition-duration: .4s;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .page-navigation__image {

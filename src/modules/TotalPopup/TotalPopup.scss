@@ -23,12 +23,12 @@
 
 .total-popup__close {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 30px;
+  right: 30px;
   width: 25px;
   height: 25px;
   object-fit: fill;
-  transition-duration: .7s;
+  transition-duration: .4s;
   cursor: pointer;
 
   &:hover {
