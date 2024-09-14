@@ -10,7 +10,7 @@ const Footer: FC = () => {
     <footer className='footer'>
       <div className='footer__column'>
         <img className='footer__logo' src={Logo} alt='Логотип' />
-        <p className='footer__text'>База отдыха работает и летом и зимой</p>
+        <p className='footer__text'>База отдыха работает круглогодично. Администрация 08:00 - 19:00</p>
       </div>
       <div className='footer__column'>
         <h3 className='footer__title'>Контакты</h3>
