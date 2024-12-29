@@ -11,6 +11,7 @@ const Footer: FC = () => {
       <div className='footer__column'>
         <img className='footer__logo' src={Logo} alt='Логотип' />
         <p className='footer__text'>База отдыха работает круглогодично. Администрация 08:00 - 19:00</p>
+        <p className='footer__text_small'>Вся информация, размещённая на сайте, является справочной, не является рекламой.</p>
       </div>
       <div className='footer__column'>
         <h3 className='footer__title'>Контакты</h3>
@@ -25,9 +26,9 @@ const Footer: FC = () => {
       </div>
       <div className='footer__column'>
         <h3 className='footer__title'>Адрес</h3>
-        <p className='footer__text'>Челябинская область,</p>
-        <p className='footer__text'>Каслинский район,</p>
-        <p className='footer__text'>У Семи озёр</p>
+        <p className='footer__text'>Челябинская область,<br/>
+        Каслинский район,<br/>
+        У Семи озёр</p>
       </div>
     </footer>
   );
