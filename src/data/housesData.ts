@@ -1,15 +1,15 @@
 /* eslint-disable max-len */
 import { CostNameType, HouseType } from '../utils/enums';
 import WinterHouse from '../images/map-marks/winter-house.svg';
-import SmallWinterHouse from '../images/map-marks/small-winter-house.svg';
+// import SmallWinterHouse from '../images/map-marks/small-winter-house.svg';
 import Sauna from '../images/map-marks/sauna.svg';
 import WinterHouseWithSauna from '../images/map-marks/winter-house-with-sauna.svg';
 import GuestHouse from '../images/map-marks/guest-house.svg';
 
 import images04 from './houses/04';
 import images07 from './houses/07';
-import images13a from './houses/13a';
-import images13b from './houses/13b';
+// import images13a from './houses/13a';
+// import images13b from './houses/13b';
 import images14 from './houses/14';
 import images16 from './houses/16';
 import images18 from './houses/18';
@@ -19,12 +19,12 @@ import images21a from './houses/21a';
 import images22 from './houses/22';
 import images22a from './houses/22a';
 import images23 from './houses/23';
-import images24 from './houses/24';
+// import images24 from './houses/24';
 import images25 from './houses/25';
 import images26 from './houses/26';
 import images27 from './houses/27';
 import images28 from './houses/28';
-import images30 from './houses/30';
+// import images30 from './houses/30';
 
 export interface IHouse {
   title: string,
@@ -106,60 +106,60 @@ const housesData: IHouse[] = [
     cost: 8000,
     costName: CostNameType.PER_DAY,
   },
-  {
-    title: '13a',
-    type: HouseType.SMALL_WINTER_HOUSE,
-    additionalType: HouseType.WINTER_HOUSE,
-    mapMark: SmallWinterHouse,
-    left: 755,
-    top: 116,
-    images: images13a,
-    annotation: 'Зимний/Летний дом',
-    capacity: 3,
-    description: `Двухэтажный шестиугольный дом из деревянного бруса с застеклённой верандой.
+  // {
+  //   title: '13a',
+  //   type: HouseType.SMALL_WINTER_HOUSE,
+  //   additionalType: HouseType.WINTER_HOUSE,
+  //   mapMark: SmallWinterHouse,
+  //   left: 755,
+  //   top: 116,
+  //   images: images13a,
+  //   annotation: 'Зимний/Летний дом',
+  //   capacity: 3,
+  //   description: `Двухэтажный шестиугольный дом из деревянного бруса с застеклённой верандой.
 
-    В аренду коттеджа включено:
-    •	1 спальня с 3 одноместными кроватями на втором этаже
-    •	Печь
-    •	Ванная с туалетом
-    •	Встроенная кухня с плитой и раковиной
-    •	Посуда
-    •	Чайник, микроволновка, холодильник
-    •	ЖК-панель
-    •	Ортопедический матрас, постельное бельё, одеяло, плед, лицевые полотенца
-    •	Мангальная зона, дрова
-    •	Крытая веранда
-    • Отдельных выход к озеру через понтон`,
-    cost: 3500,
-    costName: CostNameType.PER_DAY,
-  },
-  {
-    title: '13б',
-    type: HouseType.SMALL_WINTER_HOUSE,
-    additionalType: HouseType.WINTER_HOUSE,
-    mapMark: SmallWinterHouse,
-    left: 815,
-    top: 116,
-    images: images13b,
-    annotation: 'Зимний/Летний дом',
-    capacity: 3,
-    description: `Двухэтажный шестиугольный дом из деревянного бруса с застеклённой верандой.
+  //   В аренду коттеджа включено:
+  //   •	1 спальня с 3 одноместными кроватями на втором этаже
+  //   •	Печь
+  //   •	Ванная с туалетом
+  //   •	Встроенная кухня с плитой и раковиной
+  //   •	Посуда
+  //   •	Чайник, микроволновка, холодильник
+  //   •	ЖК-панель
+  //   •	Ортопедический матрас, постельное бельё, одеяло, плед, лицевые полотенца
+  //   •	Мангальная зона, дрова
+  //   •	Крытая веранда
+  //   • Отдельных выход к озеру через понтон`,
+  //   cost: 3500,
+  //   costName: CostNameType.PER_DAY,
+  // },
+  // {
+  //   title: '13б',
+  //   type: HouseType.SMALL_WINTER_HOUSE,
+  //   additionalType: HouseType.WINTER_HOUSE,
+  //   mapMark: SmallWinterHouse,
+  //   left: 815,
+  //   top: 116,
+  //   images: images13b,
+  //   annotation: 'Зимний/Летний дом',
+  //   capacity: 3,
+  //   description: `Двухэтажный шестиугольный дом из деревянного бруса с застеклённой верандой.
 
-    В аренду коттеджа включено:
-    •	1 спальня с 3 одноместными кроватями на втором этаже
-    •	Печь
-    •	Ванная с туалетом
-    •	Встроенная кухня с плитой и раковиной
-    •	Посуда
-    •	Чайник, микроволновка, холодильник
-    •	ЖК-панель
-    •	Ортопедический матрас, постельное белье, одеяло, плед, лицевые полотенца
-    •	Мангальная зона, дрова
-    •	Крытая веранда
-    • Отдельный выход к озеру через понтон`,
-    cost: 3500,
-    costName: CostNameType.PER_DAY,
-  },
+  //   В аренду коттеджа включено:
+  //   •	1 спальня с 3 одноместными кроватями на втором этаже
+  //   •	Печь
+  //   •	Ванная с туалетом
+  //   •	Встроенная кухня с плитой и раковиной
+  //   •	Посуда
+  //   •	Чайник, микроволновка, холодильник
+  //   •	ЖК-панель
+  //   •	Ортопедический матрас, постельное белье, одеяло, плед, лицевые полотенца
+  //   •	Мангальная зона, дрова
+  //   •	Крытая веранда
+  //   • Отдельный выход к озеру через понтон`,
+  //   cost: 3500,
+  //   costName: CostNameType.PER_DAY,
+  // },
   {
     title: '20',
     type: HouseType.WINTER_HOUSE,
@@ -291,28 +291,28 @@ const housesData: IHouse[] = [
     cost: 7000,
     costName: CostNameType.PER_DAY,
   },
-  {
-    title: '24',
-    type: HouseType.WINTER_HOUSE_WITH_SAUNA,
-    additionalType: HouseType.WINTER_HOUSE,
-    mapMark: WinterHouseWithSauna,
-    left: 395,
-    top: 132,
-    images: images24,
-    annotation: 'Летний дом с каменными печами',
-    capacity: 11,
-    description: `В аренду включено:
-    •	2 спальни с 3 одноместными кроватями
-    •	1 спальня с 2 одноместными кроватями
-    •	В гостиной 2 дивана и одноместная кровать
-    •	Мини-кухня с плиткой и раковиной
-    •	Чайник, Микроволновка, холодильник
-    •	Свежее постельное белье и полотенце
-    •	Туалет на улице
-    •	Мангальная зона, зона отдыха`,
-    cost: 8000,
-    costName: CostNameType.PER_DAY,
-  },
+  // {
+  //   title: '24',
+  //   type: HouseType.WINTER_HOUSE_WITH_SAUNA,
+  //   additionalType: HouseType.WINTER_HOUSE,
+  //   mapMark: WinterHouseWithSauna,
+  //   left: 395,
+  //   top: 132,
+  //   images: images24,
+  //   annotation: 'Летний дом с каменными печами',
+  //   capacity: 11,
+  //   description: `В аренду включено:
+  //   •	2 спальни с 3 одноместными кроватями
+  //   •	1 спальня с 2 одноместными кроватями
+  //   •	В гостиной 2 дивана и одноместная кровать
+  //   •	Мини-кухня с плиткой и раковиной
+  //   •	Чайник, Микроволновка, холодильник
+  //   •	Свежее постельное белье и полотенце
+  //   •	Туалет на улице
+  //   •	Мангальная зона, зона отдыха`,
+  //   cost: 8000,
+  //   costName: CostNameType.PER_DAY,
+  // },
   {
     title: '25',
     type: HouseType.GUEST_HOUSE,
@@ -424,25 +424,25 @@ const housesData: IHouse[] = [
     cost: 5000,
     costName: CostNameType.PER_DAY,
   },
-  {
-    title: '30',
-    type: HouseType.WINTER_HOUSE,
-    mapMark: Sauna,
-    left: 336,
-    top: 147,
-    images: images30,
-    annotation: 'Двухместный тёплый домик',
-    capacity: 2,
-    description: `В аренду ключено:
-    • 2 односпальные кровати
-    • Печь
-    • Холодильник, микроволновка, чайник, плитка, посуда
-    • Пристроенная веранда
-    • Мангальная зона, зона отдыха
-    •	Крытая веранда`,
-    cost: 2000,
-    costName: CostNameType.PER_DAY,
-  },
+  // {
+  //   title: '30',
+  //   type: HouseType.WINTER_HOUSE,
+  //   mapMark: Sauna,
+  //   left: 336,
+  //   top: 147,
+  //   images: images30,
+  //   annotation: 'Двухместный тёплый домик',
+  //   capacity: 2,
+  //   description: `В аренду ключено:
+  //   • 2 односпальные кровати
+  //   • Печь
+  //   • Холодильник, микроволновка, чайник, плитка, посуда
+  //   • Пристроенная веранда
+  //   • Мангальная зона, зона отдыха
+  //   •	Крытая веранда`,
+  //   cost: 2000,
+  //   costName: CostNameType.PER_DAY,
+  // },
 ];
 
 export default housesData;
