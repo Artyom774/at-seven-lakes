@@ -7,10 +7,9 @@ interface HouseCardProps {
   alt?: string,
   slidesPerView: number,
   slideWidth: number,
-  slideHeight: number,
 }
 
-const SliderBlock: FC<HouseCardProps> = ({images, alt, slidesPerView, slideWidth, slideHeight}) => {
+const SliderBlock: FC<HouseCardProps> = ({images, alt, slidesPerView, slideWidth}) => {
   const [swiper, setSwiper] = React.useState<any>(null);
 
   const handlePrev = () => {
@@ -37,7 +36,7 @@ const SliderBlock: FC<HouseCardProps> = ({images, alt, slidesPerView, slideWidth
             <SwiperSlide key={index}>
               <img
                 className='slider-block__image'
-                style={{width: `${slideWidth}px`, height: `${slideHeight}px`}}
+                style={{width: `${slideWidth}px`}}
                 src={image}
                 alt={alt}
                 loading='lazy'

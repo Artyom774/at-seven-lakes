@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import { CostNameType, HouseType } from '../utils/enums';
 import WinterHouse from '../images/map-marks/winter-house.svg';
-// import SmallWinterHouse from '../images/map-marks/small-winter-house.svg';
+import SmallWinterHouse from '../images/map-marks/small-winter-house.svg';
 import Sauna from '../images/map-marks/sauna.svg';
 import WinterHouseWithSauna from '../images/map-marks/winter-house-with-sauna.svg';
 import GuestHouse from '../images/map-marks/guest-house.svg';
@@ -9,7 +9,7 @@ import GuestHouse from '../images/map-marks/guest-house.svg';
 import images04 from './houses/04';
 import images07 from './houses/07';
 // import images13a from './houses/13a';
-// import images13b from './houses/13b';
+import images13b from './houses/13b';
 import images14 from './houses/14';
 import images16 from './houses/16';
 import images18 from './houses/18';
@@ -133,33 +133,33 @@ const housesData: IHouse[] = [
   //   cost: 3500,
   //   costName: CostNameType.PER_DAY,
   // },
-  // {
-  //   title: '13б',
-  //   type: HouseType.SMALL_WINTER_HOUSE,
-  //   additionalType: HouseType.WINTER_HOUSE,
-  //   mapMark: SmallWinterHouse,
-  //   left: 815,
-  //   top: 116,
-  //   images: images13b,
-  //   annotation: 'Зимний/Летний дом',
-  //   capacity: 3,
-  //   description: `Двухэтажный шестиугольный дом из деревянного бруса с застеклённой верандой.
+  {
+    title: '13б',
+    type: HouseType.SMALL_WINTER_HOUSE,
+    additionalType: HouseType.WINTER_HOUSE,
+    mapMark: SmallWinterHouse,
+    left: 815,
+    top: 116,
+    images: images13b,
+    annotation: 'Зимний/Летний дом',
+    capacity: 3,
+    description: `Двухэтажный шестиугольный дом из деревянного бруса с застеклённой верандой.
 
-  //   В аренду коттеджа включено:
-  //   •	1 спальня с 3 одноместными кроватями на втором этаже
-  //   •	Печь
-  //   •	Ванная с туалетом
-  //   •	Встроенная кухня с плитой и раковиной
-  //   •	Посуда
-  //   •	Чайник, микроволновка, холодильник
-  //   •	ЖК-панель
-  //   •	Ортопедический матрас, постельное белье, одеяло, плед, лицевые полотенца
-  //   •	Мангальная зона, дрова
-  //   •	Крытая веранда
-  //   • Отдельный выход к озеру через понтон`,
-  //   cost: 3500,
-  //   costName: CostNameType.PER_DAY,
-  // },
+    В аренду коттеджа включено:
+    •	1 спальня с 3 одноместными кроватями на втором этаже
+    •	Печь
+    •	Ванная с туалетом
+    •	Встроенная кухня с плитой и раковиной
+    •	Посуда
+    •	Чайник, микроволновка, холодильник
+    •	ЖК-панель
+    •	Ортопедический матрас, постельное белье, одеяло, плед, лицевые полотенца
+    •	Мангальная зона, дрова
+    •	Крытая веранда
+    • Отдельный выход к озеру через понтон`,
+    cost: 3500,
+    costName: CostNameType.PER_DAY,
+  },
   {
     title: '20',
     type: HouseType.WINTER_HOUSE,
