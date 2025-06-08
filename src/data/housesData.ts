@@ -23,6 +23,7 @@ import images23 from './houses/23';
 import images25 from './houses/25';
 import images26 from './houses/26';
 import images27 from './houses/27';
+import images27a from './houses/27a';
 import images28 from './houses/28';
 // import images30 from './houses/30';
 
@@ -183,7 +184,7 @@ const housesData: IHouse[] = [
     •	ЖК-панель
     •	Матрас, постельное белье, одеяло, плед, лицевые полотенца
     •	Мангальная зона, зона отдыха, дрова`,
-    cost: 10000,
+    cost: 11000,
     costName: CostNameType.PER_DAY,
   },
   {
@@ -400,6 +401,21 @@ const housesData: IHouse[] = [
     •	Моечная`,
     cost: 9000,
     costName: CostNameType.PER_DAY,
+  },
+  {
+    title: '27а',
+    type: HouseType.SAUNA,
+    mapMark: Sauna,
+    left: 150,
+    top: 256,
+    images: images27a,
+    capacity: 5,
+    description: `Одноэтажная на 5 гостей
+    В аренду включено:
+    •	Парилка
+    •	Душевая`,
+    cost: 3000,
+    costName: CostNameType.PER_DAY_HALF,
   },
   {
     title: '28',
