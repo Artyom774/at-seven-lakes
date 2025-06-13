@@ -22,7 +22,7 @@ import images23 from './houses/23';
 // import images24 from './houses/24';
 import images25 from './houses/25';
 import images26 from './houses/26';
-import images27 from './houses/27';
+// import images27 from './houses/27';
 import images27a from './houses/27a';
 import images28 from './houses/28';
 // import images30 from './houses/30';
@@ -374,34 +374,34 @@ const housesData: IHouse[] = [
     costName: CostNameType.PER_DAY,
     additionally: 'При аренде только 1 этажа с баней и 3 спальными местами - 4000 руб./сутки'
   },
-  {
-    title: '27',
-    type: HouseType.SUMMER_HOUSE,
-    additionalType: HouseType.SUMMER_HOUSE,
-    mapMark: WinterHouseWithSauna,
-    left: 150,
-    top: 286,
-    images: images27,
-    annotation: 'Дом №27. Летний дом из сруба с баней, с верандой и мангальной зоной',
-    capacity: 14,
-    description: `В аренду включено:
-    •	2 комнаты по 3 одноместных кровати
-    •	1 комната с 4 одноместными кроватями
-    •	Встроенная кухня с плитой и раковиной
-    •	Диванная зона (3 дивана)
-    •	Столовая
-    •	Каменная печь с плитой
-    •	Чайник, микроволновка, холодильник
-    •	Свежее постельное бельё и полотенца
-    •	Туалет на улице
-    •	Крытая веранда
+  // {
+  //   title: '27',
+  //   type: HouseType.SUMMER_HOUSE,
+  //   additionalType: HouseType.SUMMER_HOUSE,
+  //   mapMark: WinterHouseWithSauna,
+  //   left: 150,
+  //   top: 286,
+  //   images: images27,
+  //   annotation: 'Дом №27. Летний дом из сруба с баней, с верандой и мангальной зоной',
+  //   capacity: 14,
+  //   description: `В аренду включено:
+  //   •	2 комнаты по 3 одноместных кровати
+  //   •	1 комната с 4 одноместными кроватями
+  //   •	Встроенная кухня с плитой и раковиной
+  //   •	Диванная зона (3 дивана)
+  //   •	Столовая
+  //   •	Каменная печь с плитой
+  //   •	Чайник, микроволновка, холодильник
+  //   •	Свежее постельное бельё и полотенца
+  //   •	Туалет на улице
+  //   •	Крытая веранда
 
-    Баня:
-    •	Парилка
-    •	Моечная`,
-    cost: 9000,
-    costName: CostNameType.PER_DAY,
-  },
+  //   Баня:
+  //   •	Парилка
+  //   •	Моечная`,
+  //   cost: 9000,
+  //   costName: CostNameType.PER_DAY,
+  // },
   {
     title: '27а',
     type: HouseType.SAUNA,
