@@ -20,7 +20,7 @@ const HouseCard: FC<HouseCardProps> = ({house}) => {
         </h4>
         {house.type !== HouseType.SUMMER_HOUSE && <p className='house-card__bold-text'>{house.annotation}</p>}
         <br/>
-        <p>Вместимость: {house.capacity} гостей{house.winterCapacity && `, зимой ${house.winterCapacity} гостей`}</p>
+        <p>Вместимость: до {house.capacity} гостей{house.winterCapacity && `, зимой до ${house.winterCapacity} гостей`}</p>
         <br/>
         <p>{house.description}</p>
         <br/>
