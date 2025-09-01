@@ -1,6 +1,10 @@
 .header__link {
+  padding: 0;
   font-size: 28px;
   line-height: 38px;
   font-weight: 600;
   white-space: nowrap;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

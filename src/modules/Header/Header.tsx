@@ -1,22 +1,53 @@
 import React, { FC } from 'react';
-import { NavLink } from 'react-router-dom';
 import './Header.scss';
-import { main, plan, houses, map } from '../../utils/navTitles';
 import { phone, whatsApp } from '../../utils/constants';
 import Logo from '../../images/logo.svg';
 import WhatsAppIcon from '../../images/icons/whats-app.svg';
 import MobileIcon from '../../images/icons/mobile.svg';
 
-const Header: FC = () => {
+interface Tab {
+  path: string;
+  title: string;
+}
+
+export interface HeaderProps {
+  activeTab: string;
+  setActiveTab: (tab: string) => void;
+  tabs: Tab[];
+  tabHashes: Record<string, string>;
+}
+
+const Header: FC<HeaderProps> = ({ activeTab, setActiveTab, tabs, tabHashes }) => {
   return (
     <header className='header'>
       <img className='header__logo' src={Logo} alt='Логотип базы отдыха' />
       <div className='header__content'>
         <nav className='header__menu'>
-          <NavLink className='header__link' to={main.path}>{main.title}</NavLink>
-          <NavLink className='header__link' to={plan.path}>{plan.title}</NavLink>
-          <NavLink className='header__link' to={houses.path}>{houses.title}</NavLink>
-          <NavLink className='header__link' to={map.path}>{map.title}</NavLink>
+          {tabs.map(tab => (
+            tab.path === '/' ? (
+              <span
+                key={tab.path}
+                className={`header__link${activeTab === tab.path ? ' header__link--active' : ''}`}
+                onClick={() => setActiveTab(tab.path)}
+                style={{ cursor: 'pointer' }}
+              >
+                {tab.title}
+              </span>
+            ) : (
+              <a
+                key={tab.path}
+                href={tabHashes[tab.path]}
+                className={`header__link${activeTab === tab.path ? ' header__link--active' : ''}`}
+                onClick={e => {
+                  e.preventDefault();
+                  setActiveTab(tab.path);
+                  window.location.hash = tabHashes[tab.path];
+                }}
+              >
+                {tab.title}
+              </a>
+            )
+          ))}
         </nav>
         <div className='header__contacts'>
           <a className='header__contact-item' href={whatsApp} target='_blank' rel='noopener noreferrer'>
