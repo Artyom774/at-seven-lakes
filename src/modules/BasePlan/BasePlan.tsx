@@ -13,7 +13,7 @@ const BasePlan: FC<BasePlanProps> = ({showHousePopup}) => {
   return (
     <section className='base-plan'>
       <div className='base-plan__plan'>
-        <img className='base-plan__bottom-layer' src={BasePlanImage} alt='План базы отдыха' />
+        <img className='base-plan__bottom-layer' src={BasePlanImage} alt='План клуба' />
         {housesData.map((item, index) => {
           return (
             item.mapMark &&

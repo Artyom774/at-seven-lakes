@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import './Header.scss';
 import { phone, whatsApp } from '../../utils/constants';
-import Logo from '../../images/logo.svg';
+import Logo from '../../images/logo.png';
 import WhatsAppIcon from '../../images/icons/whats-app.svg';
 import MobileIcon from '../../images/icons/mobile.svg';
 
@@ -20,7 +20,7 @@ export interface HeaderProps {
 const Header: FC<HeaderProps> = ({ activeTab, setActiveTab, tabs, tabHashes }) => {
   return (
     <header className='header'>
-      <img className='header__logo' src={Logo} alt='Логотип базы отдыха' />
+      <img className='header__logo' src={Logo} alt='Логотип клуба' />
       <div className='header__content'>
         <nav className='header__menu'>
           {tabs.map(tab => (

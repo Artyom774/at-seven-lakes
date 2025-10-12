@@ -20,5 +20,5 @@ export const houses: INavTitle = {
 
 export const map: INavTitle = {
   path: '/map',
-  title: 'Расположение базы',
+  title: 'Расположение клуба',
 };
