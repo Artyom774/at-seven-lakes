@@ -20,7 +20,7 @@ const PlanPage: FC<PlanPageProps> = ({ title }) => {
 
   return (
     <main className='main'>
-      <PageTitleSection image={pageIcon} title={title} subtitle='План базы' />
+      <PageTitleSection image={pageIcon} title={title} subtitle='План клуба "Карась"' />
       <BasePlan showHousePopup={showHousePopup} />
       <TextSection title='Важно!' text={planPageText} />
       {currentHouse && <TotalPopup setCurrentHouse={setCurrentHouse} house={currentHouse} />}

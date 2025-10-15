@@ -9,7 +9,7 @@ const ContactInfo: FC = () => {
     <section className='contact-info'>
       <a className='contact-info__point' href='https://yandex.ru/maps/-/CDGYMCJD' target='_blank' rel='noopener noreferrer'>
         <img className='contact-info__icon' src={LocationIcon} alt='Местоположение' />
-        <span className='contact-info__text'>Челябинская бласть, Каслинский район,<br/>У семи озёр</span>
+        <span className='contact-info__text'>Челябинская бласть, Каслинский район,<br/>клуб "Карась"</span>
       </a>
       <div className='contact-info__point'>
         <a className='contact-info__text' href={`tel: ${phone}`}>{phone}</a>
