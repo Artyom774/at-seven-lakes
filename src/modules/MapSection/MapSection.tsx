@@ -7,7 +7,7 @@ const MapSection: FC = () => {
       <iframe
         className='map-section__map'
         title='yandex-map'
-        src='https://yandex.ru/map-widget/v1/?um=constructor%3Addc5a4c320d0b115b70a2e7115699554cd5f6d71b67c27743f5953b2986fbb56&amp;source=constructor'
+        src='https://yandex.ru/map-widget/v1/?um=constructor%3Abbf8b83cfc2b9c381d426d74425eef1285e3a8d941a941888dfcb1320bb61e3e&amp;source=constructor'
         width='1280'
         height='460'
       ></iframe>
