@@ -44,6 +44,7 @@ export interface IHouse {
   additionally?: string,
 }
 
+const HOUSE_21A_COST: number = 5000;
 const summerHouseAnnotation: string = 'Летний (щитовой) домик';
 const summerHouseDescription: string = 'Двухкомнатный с верандой, с мангальной зоной и зоной отдыха';
 
@@ -207,7 +208,7 @@ const housesData: IHouse[] = [
     Перед домом мангальная зона со столом и скамейками.
 
     Крытая веранда.`,
-    additionally: 'Рядом с домом банька 21а за дополнительную плату 3.000 руб/полсуток',
+    additionally: `Рядом с домом банька 21а за дополнительную плату ${HOUSE_21A_COST} руб/полсуток`,
   },
   {
     title: '21а',
@@ -217,7 +218,7 @@ const housesData: IHouse[] = [
     top: 316,
     images: images21a,
     capacity: 4,
-    cost: 5000,
+    cost: HOUSE_21A_COST,
     costName: CostNameType.PER_DAY_HALF,
     description: `Одноэтажная на 4 гостей
     В аренду включено:
