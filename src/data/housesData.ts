@@ -25,7 +25,7 @@ import images26 from './houses/26';
 // import images27 from './houses/27';
 import images27a from './houses/27a';
 import images28 from './houses/28';
-// import images30 from './houses/30';
+import images30 from './houses/30';
 
 export interface IHouse {
   title: string,
@@ -79,7 +79,7 @@ const housesData: IHouse[] = [
     images: [...images14, ...images16, ...images18],
     annotation: summerHouseAnnotation,
     capacity: 4,
-    cost: 800,
+    cost: 750,
     costName: CostNameType.PER_BED,
     description: summerHouseDescription,
   },
@@ -442,25 +442,21 @@ const housesData: IHouse[] = [
     •	Мангальная зона, зона отдыха
     •	Крытая веранда`,
   },
-  // {
-  //   title: '30',
-  //   type: HouseType.WINTER_HOUSE,
-  //   mapMark: Sauna,
-  //   left: 336,
-  //   top: 147,
-  //   images: images30,
-  //   annotation: 'Двухместный тёплый домик',
-  //   capacity: 2,
-  //   cost: 2000,
-  //   costName: CostNameType.PER_DAY,
-  //   description: `В аренду ключено:
-  //   • 2 односпальные кровати
-  //   • Печь
-  //   • Холодильник, микроволновка, чайник, плитка, посуда
-  //   • Пристроенная веранда
-  //   • Мангальная зона, зона отдыха
-  //   •	Крытая веранда`,
-  // },
+  {
+    title: '30',
+    type: HouseType.SAUNA,
+    mapMark: Sauna,
+    left: 336,
+    top: 147,
+    images: images30,
+    capacity: 4,
+    cost: 4000,
+    costName: CostNameType.PER_DAY_HALF,
+    description: `В аренду включено:
+    • Тёплая веранда
+    • Печь
+    • Душевая кабина`,
+  },
 ];
 
 export default housesData;
