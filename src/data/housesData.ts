@@ -450,7 +450,7 @@ const housesData: IHouse[] = [
     top: 147,
     images: images30,
     capacity: 4,
-    cost: 4000,
+    cost: 5000,
     costName: CostNameType.PER_DAY_HALF,
     description: `В аренду включено:
     • Тёплая веранда
